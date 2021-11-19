@@ -14,7 +14,6 @@ then if we want to asing a context of our font then we do, so the g2 can draw it
 
 String StringLine = "This is just a test Message";
 
-//FontRenderContext name_of_the_var = g2.FontRenderContext()
 
 for priting this we code:
 
@@ -34,6 +33,25 @@ the output will be:
 
 ![image](https://user-images.githubusercontent.com/63984422/142704003-65825706-98e1-4c01-9293-ba8402e089b6.png)
 
+
+
+
+for more hocus pocus things, related to the text, say for example we want to make the text thicker, and fill it with diffrent colors.
+for this purpose, we use the method Gly vector.
+
+before jumbing into defining Glyvector as such:
+
+Glyvector valueOfGlyVect;
+
+we have first to define a new FrontRenderContext, as follows:
+
+FrontRenderContext frontline;
+frontline g2.getFrontRenderContext();
+
+then after that, we connect the gly vector, and font line together, as follows:
+
+
+valueOfGlyVect =fontline.createGlyvector(frontline, "hey, its 3 am");
 
 
 ![image](https://user-images.githubusercontent.com/63984422/142703018-df1a8620-f267-434e-8520-94f576599ee7.png)
