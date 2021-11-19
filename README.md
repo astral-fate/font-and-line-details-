@@ -53,5 +53,14 @@ then after that, we connect the gly vector, and font line together, as follows:
 
 valueOfGlyVect =fontline.createGlyvector(frontline, "hey, its 3 am");
 
+just as what we did with the string, when we difned cordinates, we have to do the same too with glyvector.
+this time, we will define a new shape, then recall it within another function. follow up
+
+shape XyCords = XyCords.valueOfGlyVect.getOutline(200,200);
+
+then we can finally print the final oubut as follows:
+
+g2.draw(valueOfGlyVect);
+
 
 ![image](https://user-images.githubusercontent.com/63984422/142703018-df1a8620-f267-434e-8520-94f576599ee7.png)
