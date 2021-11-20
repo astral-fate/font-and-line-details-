@@ -12,20 +12,30 @@ Font nameofthefont = new Font("style", "type, Font.BOLD/ITALIC, ETC", 60//size;
 
 then if we want to asing a context of our font then we do, so the g2 can draw it we code:
 
-String StringLine = "This is just a test Message";
+
+        String StringLine = "This is just a test Message";
+        
+        
+
 
 
 for priting this we code:
 
-g2.draw(StringLine);
+        g2.drawstring(StringLine);
+
+
 
 but it needs more atturbutes, so 
 
-g2.drawString(StringLine, 0, 0);
+        g2.drawstring(StringLine, 0,0);
+
+
 
 if we set the x and y cordinates to zero, it will be at the top of the penel, so we change the values a bit, so it can be visiable
 
-g2.drawstring(StringLine, 200,200);
+        g2.drawstring(StringLine, 200,200);
+
+
 
 the output will be:
 
@@ -41,17 +51,26 @@ for this purpose, we use the method Gly vector.
 
 before jumbing into defining Glyvector as such:
 
-Glyvector valueOfGlyVect;
+
+        GlyphVector valueOfGlyVect;
+
+
 
 we have first to define a new FrontRenderContext, as follows:
 
-FrontRenderContext frontline;
-frontline g2.getFrontRenderContext();
+        FrontRenderContext frontline;
+        frontline g2.getFrontRenderContext();
+        
+        
+then after that, we connect the glyp vector, and font line together, as follows:        
 
-then after that, we connect the gly vector, and font line together, as follows:
 
 
-valueOfGlyVect =fontline.createGlyvector(frontline, "hey, its 3 am");
+        valueOfGlyVect =fontline.createGlypVector(frontline, "hey, its 3 am");
+
+
+
+
 
 just as what we did with the string, when we difned cordinates, we have to do the same too with glyvector.
 this time, we will define a new shape, then recall it within another function. follow up
