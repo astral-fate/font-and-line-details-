@@ -64,3 +64,17 @@ g2.draw(valueOfGlyVect);
 
 
 ![image](https://user-images.githubusercontent.com/63984422/142703018-df1a8620-f267-434e-8520-94f576599ee7.png)
+
+
+for more hocus pocus edits, lets make the text winy!!
+
+ Font font = new Font("Serif", Font.BOLD, 36);
+        
+        AffineTransform tx = new AffineTransform();
+        tx.shear(0.5, 0);
+        g2.setFont(font.deriveFont(tx));
+        g2.drawString("Derived font", 100, 100);
+
+
+
+![image](https://user-images.githubusercontent.com/63984422/142712343-a31a7107-aa08-41e0-84b9-84757f89595f.png)
