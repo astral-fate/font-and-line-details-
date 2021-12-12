@@ -90,8 +90,7 @@ this time, we will define a new shape, then recall it within another function. f
 
 for more hocus pocus edits, lets make the text winy!!
 
- Font font = new Font("Serif", Font.BOLD, 36);
-        
+        Font font = new Font("Serif", Font.BOLD, 36);  
         AffineTransform tx = new AffineTransform();
         tx.shear(0.5, 0);
         g2.setFont(font.deriveFont(tx));
