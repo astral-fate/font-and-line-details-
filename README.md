@@ -1,14 +1,14 @@
 # font-and-line-details-
 
-to use fonts and lines, we first have ti import some java libraries, mainly
+to use fonts and lines, we first have t import some java libraries, mainly
 
-iimport java.awt.font.FontRenderContext;
+             import java.awt.font.FontRenderContext;
 
 then we do the work. By the work i mean defining a new object, as we were doing with shapes and lines, but this time with fonts.
 
 Defining a font be like
 
-Font nameofthefont = new Font("style", "type, Font.BOLD/ITALIC, ETC", 60//size;
+                  Font nameofthefont = new Font("name", "type, Font.BOLD/ITALIC, ETC", 60//size);
 
 then if we want to asing a context of our font then we do, so the g2 can draw it we code:
 
@@ -25,7 +25,7 @@ for priting this we code:
 
 
 
-but it needs more atturbutes, so 
+but it needs more atturbutes, so: 
 
         g2.drawstring(StringLine, 0,0);
 
@@ -59,10 +59,10 @@ before jumbing into defining Glyvector as such:
 we have first to define a new FrontRenderContext, as follows:
 
         FrontRenderContext frontline;
-        frontline g2.getFrontRenderContext();
+        frontline = g2.getFrontRenderContext();
         
         
-then after that, we connect the glyp vector, and font line together, as follows:        
+then after that, we connect the glyp vector, and font context together, as follows:        
 
 
 
@@ -88,7 +88,7 @@ this time, we will define a new shape, then recall it within another function. f
 ![image](https://user-images.githubusercontent.com/63984422/142703018-df1a8620-f267-434e-8520-94f576599ee7.png)
 
 
-for more hocus pocus edits, lets make the text winy!!
+for more hocus pocus edits, lets make the text whiny!!
 
         Font font = new Font("Serif", Font.BOLD, 36);  
         AffineTransform tx = new AffineTransform();
