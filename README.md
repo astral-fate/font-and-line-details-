@@ -56,17 +56,17 @@ before jumbing into defining Glyvector as such:
 
 
 
-we have first to define a new FrontRenderContext, as follows:
+we have first to define a new FontRenderContext, as follows:
 
-        FrontRenderContext frontline;
-        frontline = g2.getFrontRenderContext();
+        FontRenderContext fontline;
+        fontline = g2.getFontRenderContext();
         
         
 then after that, we connect the glyp vector, and font context together, as follows:        
 
 
 
-        valueOfGlyVect =fontline.createGlypVector(frontline, "hey, its 3 am");
+        valueOfGlyVect =fontline.createGlypVector(fontline, "hey, its 3 am");
 
 
 
